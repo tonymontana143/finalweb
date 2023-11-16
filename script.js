@@ -26,12 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     
-    const btn = document.querySelector("sound");
-    const audio = new Audio("tom-2.mp3"); 
-    btn.addEventListener("click", () => {
-      audio.play();
-    });
-  
+    const btn = document.querySelector("#sound"); 
+const audio = new Audio("tom-2.mp3"); 
+
+btn.addEventListener("click", () => {
+  audio.play();
+});
+const menuBtn = document.getElementById("menu-btn");
+const menuClickSound = document.getElementById("menuClickSound");
+
+menuBtn.addEventListener("click", () => {
+    menuClickSound.play();
+    
+});
+
+
     
     document.addEventListener("keypress", (event) => {
       console.log(`Key pressed: ${event.key}`);
