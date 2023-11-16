@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
@@ -8,51 +9,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Document</title>
 </head>
-<header class="header">
-    <a href="#" class="logo"><i class="fas fa-heartbeat"></i>Pharmateca</a>
-    <nav class="navbar">
-        <a href="index.html">home</a>
-        <a href="doctors.html">doctors</a>
-        <a href="booking.html">booking</a>
-        <a href="about.html">about</a>
-        <a href="services.html">services</a>
-        <a href="review.html">review</a>
-    </nav>
-    <div id="menu-btn" class="fas fa-bars"></div>
-</header>
+
+
+
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-heartbeat"></i>Pharmateca</a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="doctors.html">doctors</a>
+            <a href="booking.html">booking</a>
+            <a href="about.html">about</a>
+            <a href="services.html">services</a>
+            <a href="review.html">review</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
 
     <div style="height: 50px;"></div>
+
     <section class="about" id="about">
         <h1 class="heading"><span> About </span> us</h1>
         <div class="row">
-            <div class="image">
-                <img src="Vaccine development-rafiki.svg" alt="" >
-            </div>
+            
             <div class="content">
                 <h3>We take care of your healthy life</h3>
                 <p>Our mission is to improve the health and well-being of our community by delivering excellent medical services with compassion and care. We strive to be a trusted partner in your healthcare journey.</p>
+                <p>Pharmateca Was Founded In [Year] With The Vision Of Providing Accessible And Quality Healthcare To The Community. Over The Years, We Have Grown Into A Leading Healthcare Provider, Dedicated To The Well-Being Of Our Patients. Our Commitment To Excellence And Innovation Has Been The Driving Force Behind Our Success.
+
+                    As We Continue To Evolve, We Remain Focused On Delivering Compassionate Care And Staying At The Forefront Of Medical Advancements. Our Journey Is Marked By A Passion For Healthcare And A Deep Sense Of Responsibility To The Communities We Serve.</p>
                 <a href="#" class="btn"><span class="fas fa-chevron-right"></span> learn more</a>
             </div>
         </div>
     </section>
-    <!-- snippets -->
+
+  
+    <!-- Snippet 1: Contact Information -->
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>For inquiries, please contact us at <a href="mailto:info@pharmateca.com">info@pharmateca.com</a></p>
+    </section>
+
+    <!-- Snippet 2: Featured Services -->
+    <section class="featured-services">
+        <h2>Featured Services</h2>
+        <ul>
+            <li>Health Check-ups</li>
+            <li>Specialized Treatments</li>
+            <li>Emergency Care</li>
+        </ul>
+    </section>
+
     <section class="contact-form">
         <h2>Contact Us</h2>
         <form action="process_contact.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-    
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-    
+
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-    
+
             <button type="submit">Submit</button>
         </form>
     </section>
+
+    <!-- Snippet 3: Social Media Links -->
+    <section class="social-media">
+        <h2>Connect with Us</h2>
+        <p>Follow us on <a href="https://www.facebook.com/pharmateca" target="_blank">Facebook</a> and <a href="https://twitter.com/pharmateca" target="_blank">Twitter</a>.</p>
+    </section>
+
+    <body>
+        <script src="script.js"></script>
+    </body>
 
 </html>
